@@ -14,7 +14,6 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      // home: const MyHomePage(title: 'Flutter Demo Home Page'),
       home: FirstPage(),
     );
   }
@@ -24,7 +23,7 @@ class FirstPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Flutterの練習帳1')),
+      appBar: AppBar(title: const Text('1ページ目')),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -51,7 +50,7 @@ class SecondPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Flutterの練習帳2')),
+      appBar: AppBar(title: const Text('2ページ目')),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -72,6 +71,8 @@ class SecondPage extends StatelessWidget {
   }
 }
 
+// 以下は元々のサンプルコード（参考用のMyHomePage）
+// 現在は使用していません。
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
 
@@ -117,15 +118,3 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
-
-// class FirstPage extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       appBar: AppBar(title: Text('最初のページ')),
-//       body: Center(
-//         child: Text('Hello Flutter!', style: TextStyle(fontSize: 24)),
-//       ),
-//     );
-//   }
-// }
