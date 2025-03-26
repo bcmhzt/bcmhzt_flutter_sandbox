@@ -14,11 +14,13 @@ iOS App / Android Appのデプロイフローや開発フローを確認・整�
 
 ### iOS
 
-iOS用にビルドする
+iOS用にビルドする  
+--releaseなしでもOK
 ```
 % flutter clean
 % flutter pub get
 % flutter build ios --release
+(% flutter build ios)
 ```
 以下にビルドされる。（が、特に直接は使わない）
 ```
