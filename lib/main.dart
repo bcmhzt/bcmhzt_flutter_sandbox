@@ -24,7 +24,7 @@ class FirstPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Flutterの練習帳1')),
+      appBar: AppBar(title: const Text('Flutterの練習帳1 ver1')),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
