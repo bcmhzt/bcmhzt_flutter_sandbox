@@ -33,9 +33,9 @@ iOS用にビルドする
 build/ios/iphoneos/Runner.app
 ```
 iOSディレクトリへ移動してRunner.xcworkspaceを起動
+(このときXcodeとかApple Store connectとかにログインしていないとだめそう。)
 ```
-% cd ios
-% open Runner.xcworkspace *めっちゃ時間かかる(xcodeが起動する)
+% open ios/Runner.xcworkspace *めっちゃ時間かかる(xcodeが起動する)
 ```
 Xcodeで、指定のRunnerを選択したまま、上部メニューのProduct->Archiveを選択する。するとアーカイブのビルドが開始されます。終了するとArchiveの画面が自動的に起動して履歴が表示されます。
 履歴にUploaded to Appleが表示されていればOK
@@ -45,7 +45,7 @@ TestFlight Internal Onlyを選んで実行
 
 Apple Store Connectにログインして、アプリから該当のアプリを選択
 TestFlightのタブを選択
-iOSのビルドの一覧で（処理中）になっていたらOK. しばらくすると「テスト準備完了」になる（めっちゃ時間がかかる
+iOSのビルドの一覧で（処理中）になっていたらOK. (処理中ステータスが表示されるまでも結構時間がかかる。数分) しばらくすると「テスト準備完了」になる（めっちゃ時間がかかる
 
 
 
