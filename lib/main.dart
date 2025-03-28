@@ -24,13 +24,17 @@ class FirstPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Flutterの練習帳1 ver1.001')),
+      appBar: AppBar(title: const Text('Flutterの練習帳1 ver1.002')),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text('Hello Flutter!', style: TextStyle(fontSize: 24)),
+            const Text(
+              'Hello Flutter! test.0001',
+              style: TextStyle(fontSize: 24),
+            ),
             const SizedBox(height: 20),
+
             ElevatedButton(
               child: const Text('2ページ目へ'),
               onPressed: () {
