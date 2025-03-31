@@ -7,7 +7,9 @@ iOS App / Android Appのデプロイフローや開発フローを確認・整�
 
 簡易的な開発はChromeを使って行います。シュミレータの起動。
 ```
-% flutter run -d chrome --web-port 50000
+% flutter clean;
+% flutter pub get;
+% flutter run -d chrome --web-port 50000;
 ```
 
 ## Buildの手順
